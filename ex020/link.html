@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Link HTML</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    a {
+        color: red; /* cor do link */
+        text-decoration: none; /* remove o sublinhado do link */
+        font-weight: bold; /* deixa o link em negrito */
+      }
+
+a:visited {
+    color: rgb(0, 0, 0); /* cor do link visitado */
+   
+}
+a:hover {
+    color: black; /* cor do link quando o mouse estiver sobre ele */
+  text-decoration: underline; /* adiciona o sublinhado ao link quando o mouse estiver sobre ele */}
+a:active {
+    color: blue; /* cor do link quando estiver sendo clicado */
+            }
+            a::after {
+                content: '<= '; /* adiciona um conteúdo após o link */
+                text-decoration: none;
+                color: red; 
+                font-weight: bold;
+            }
+            .especial::before {
+                content: '=>'; /* adiciona um conteúdo antes do link */
+                text-decoration: none;
+                color: red; 
+                font-weight: bold;
+            }
+</style>
+
+
+        
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+<li><a href="https://www.google.com" target="_blank" class="especial">Google</a></li>
+<li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+<li><a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a></li> 
+    </ul>
+
+
+</body>
+</html>

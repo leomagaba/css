@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidade de Tecnologia</title>
+    <style>
+        @font-face {
+            font-family: 'idroid';
+            src: url('fontes/idroid.otf') format('opentype');
+            font-weight: normal;
+        }
+
+        body { font-family: Arial, Helvetica, sans-serif; margin: 10px; padding: 32px; color: #222; background-color: #e6f7e6; }
+        h1 { text-align: center; margin: 8px 0; letter-spacing: 1px; }
+        h2 { text-align: center; margin: 8px 0; font-weight: 400; color: #636e67; font-size: 16px; }
+        
+        header {
+background-color: rgba(0, 128, 0, 0.619);
+padding: 10px;
+margin: 10px;
+
+        }
+        nav {
+            background-color: rgba(103, 169, 103, 0.12);
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: block;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 16px;
+            align-items: center; /* Alinha os itens verticalmente ao centro */
+            justify-content: flex-start; /* Alinha os itens do menu à esquerda */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+            padding: 8px 12px; /* Padding aumentado para uma melhor área de clique */
+            border-radius: 5px; /* Cantos arredondados para o efeito de hover */
+            transition: background-color 0.3s, color 0.3s; /* Transição suave */
+        }
+        nav a:hover {
+            background-color: #2e7d32; /* Fundo verde ao passar o mouse */
+            color: #ffffff; /* Texto branco para contraste */
+        }
+
+        main img { display: block; margin: 8px auto; height: 350px; max-width: 100%; }
+         main {
+            background-color: rgb(255, 255, 255);
+            color: black;
+         }
+        .historia {
+            font-family: 'idroid', sans-serif;
+            text-align: left;
+            background: linear-gradient(to right, rgba(86, 169, 86, 0.603), transparent);
+            color: #1a5a37;
+            padding-left: 8px;
+         }
+         .subtitulo {
+            font-weight: bolder;
+         }
+         .video-container {
+            background-color: #1a5a37; /* Tom de verde do site */
+            margin: 0px 0px 30px 0px; /* Margem para separar do conteúdo */
+            padding: 20px; /* Espaçamento interno para criar a "borda" verde */
+        }
+        .video-container iframe {
+            display: block; /* Remove espaços extras e permite margem auto */
+            margin: 0 auto; /* Centraliza o iframe horizontalmente */
+            max-width: 100%; /* Garante que o vídeo se ajuste a telas menores */
+        }
+.aprender{
+    background-color: #0b5327;
+    padding: 5px; 
+    height: 40px;
+    width: 1000px;
+    border: 1px solid black;
+    text-align: left;
+    display: block;
+    margin: 16px auto;
+
+}
+/* Container principal (fundo verde) */
+.caixa-verde {
+    background-color: #c5ebd6; 
+    padding: 20px;
+    border-radius: 0 0 10px 10px; /* Arredonda só embaixo se quiser seguir o estilo */
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* O SEGREDO: Só este container interno tem Flexbox */
+.listas-container {
+    display: flex;
+    justify-content: left; 
+    padding: 10px 0;
+    gap: 200px;
+}
+
+.lista-android {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-android li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+}
+
+/* Ícone de check igual à imagem */
+.lista-android li::before {
+    content: '✔'; 
+    margin-right: 10px;
+    color: #2e7d32; /* Verde escuro */
+    font-weight: bold;
+}
+
+.lista-android a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(8, 52, 8);
+    text-align: center;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CURIOSIDADE DE TECNOLOGIA</h1>
+        <h2 class="subtitulo">Tudo aquilo que você sempre quis saber sobre o mundo TECH, em um único lugar</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="Historia"></article>
+
+        <h2 class="historia">Historia do Mascote do Android</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet atque! Veniam tenetur expedita sapiente similique reprehenderit architecto voluptate ratione, officiis modi, autem exercitationem minus error, assumenda doloribus atque esse!</p>
+
+        <article id="primeira"></article>
+
+        <h2 class="historia">A primeira versao do Android</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum commodi maiores tempora nisi possimus repudiandae minima quos consectetur magnam aut quae quo dolorum consequatur nemo, eos vero aperiam quis!</p>
+
+        <img src="imagens/dan-droids-pq.png" alt="Android">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione rem ea veritatis quod vero asperiores nostrum commodi reiciendis mollitia saepe harum expedita. Aut, ex voluptatibus quam optio assumenda repellendus?</p>
+
+        <h2 class="historia">Surge um novo Mascote do Android</h2>
+        <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quisquam voluptatibus maxime iure odit recusandae, similique eaque, voluptate aperiam earum nemo voluptates error excepturi dignissimos atque. Laudantium consequatur illum possimus.</p>
+        <img src="imagens/irina-blok-pq.jpg" alt="foto" width="1500" height="300">
+        <p>&Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus cum unde facere quas? Tempora sit, quaerat ad minus vel error architecto id quidem fuga obcaecati dolorem totam? Recusandae, assumenda. &Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ea assumenda vel tenetur dicta, quaerat enim beatae inventore autem perferendis minima ad molestiae culpa doloribus pariatur ipsam voluptatem! At, eos.</p>
+        <img src="imagens/bugdroid.png" alt="">
+        <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit libero, aliquam neque doloremque assumenda ipsam error culpa eius minus consequatur repudiandae, atque totam architecto hic mollitia aperiam provident, voluptatibus vel. &Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cumque facilis vel veritatis nobis, nulla exercitationem aliquid ad! Reprehenderit iusto recusandae voluptatem placeat tempore soluta aliquid maiores necessitatibus iure. Cumque?</p>
+        <div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JPMm-jyKOaM?si=bJangI78FFWR4AJb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h1 class="aprender">Quer aprender mais?</h1>
+
+
+<div class="caixa-verde">
+    <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur sed cumque hic iure explicabo repellendus ducimus ut iste aliquam ex sapiente qui officia, rem nam exercitationem tempora beatae recusandae! &Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit neque aliquam ipsam dicta iste cupiditate mollitia corporis nihil officiis! Fuga accusantium exercitationem placeat corporis deserunt provident hic voluptatum quas. </p>
+    <div class="listas-container">
+        <ul class="lista-android">
+            <li>1.5 - <a href="#">Cupcake</a></li>
+            <li>1.6 - <a href="#">Donut</a></li>
+            <li>3.0 - <a href="#">Eclair</a></li>
+            <li>2.2 - <a href="#">Froyo</a></li>
+            <li>2.3 - <a href="#">Gingerbread</a></li>
+            <li>3.0 - <a href="#">Honeycomb</a></li>
+            <li>4.0 - <a href="#">Ice Cream Sandwich</a></li>
+        </ul>
+        <ul class="lista-android">
+            <li>4.1 - <a href="#">Jelly Bean</a></li>
+            <li>4.4 - <a href="#">KitKat</a></li>
+            <li>5.0 - <a href="#">Lollipop</a></li>
+            <li>6.0 - <a href="#">Marshmallow</a></li>
+            <li>7.0 - <a href="#">Nougat</a></li>
+            <li>8.0 - <a href="#">Oreo</a></li>
+            <li>9.0 - <a href="#">Pie</a></li>
+        </ul>
+    </div>
+    <p>&Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod velit maxime optio vitae? Alias magnam sunt dolor quo repellendus, reprehenderit a et omnis commodi eligendi officia corporis assumenda tempore ipsa. &Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, repudiandae. Aperiam debitis dolore fugiat repellendus non et neque esse exercitationem, dicta, cupiditate quae laudantium sunt reiciendis aliquid? Iste, doloribus eos!</p>
+</div>
+    </main>
+    <p>&Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque repellendus vero omnis repudiandae doloribus! Blanditiis voluptatum obcaecati quidem accusantium quos odit ratione! Illo ex aperiam a quae asperiores at exercitationem!</p>
+
+    <footer>
+        Site desenvolvido por Hugo Leonanrdo
+    </footer>
+</body>
+</html>

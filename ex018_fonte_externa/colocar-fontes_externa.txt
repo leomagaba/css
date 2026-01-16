@@ -1,0 +1,9 @@
+        /* Tipo de formato
+            -Open Type Font (otf)
+            -True Type Font (ttf)   
+            -Web Open Font Format (woff)
+            -Web Open Font Format 2.0 (woff2)
+            truetype-aat (Apple Advanced Typography)
+            svg (Scalable Vector Graphics)
+            
+            */

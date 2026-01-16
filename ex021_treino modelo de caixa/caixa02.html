@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de Tags</title>
+    <style>
+        body{ font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgrey;
+
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: lightgray;
+            padding: 2px;
+            /* width: 175px; Removido para a barra de navegação se ajustar ao conteúdo */
+            box-shadow: 1px 1px 1px 1px black;
+        }
+
+        nav a{
+            display: inline-block; /* Melhora o controle de espaçamento e dimensões */
+            text-decoration: none;
+            color: rgb(51, 43, 43);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: rgb(0, 8, 232);
+            }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px
+;
+        }
+        article{
+            background-color: lightgray ;       
+        }
+        article > aside {
+            background-color: rgb(80, 100, 93);
+        }
+
+        footer{
+           background: #4c3f3fc0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+        </nav>
+
+    </header>
+
+    <main>
+<section id="noticias"></section>
+<section id="noticas">
+    <article>
+        <h2>Noticias sobre Brasil</h2>
+        <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequatur tenetur numquam cupiditate eum beatae optio dignissimos qui nulla, eos odit itaque dolorum similique asperiores necessitatibus assumenda modi commodi quidem?</p>
+        <aside>
+            Artigo escrito por Leonnardo
+        </aside>
+    </article>
+</section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Hugo Leonnardo</p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades de Tecnologia - Android</title>
+    <style>
+        body {
+            background-color: #e9e9e9; /* Fundo claro para destacar o conteúdo principal */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: #2fa866;
+            color: white;
+            padding-top: 10px; /* Adiciona um pouco de preenchimento no topo */
+            padding-bottom: 10px; /* Adiciona um pouco de preenchimento na base */
+            text-align: center; /* Centraliza o conteúdo do cabeçalho */
+
+        }
+       
+        .titulo{
+            color: #f9fefc;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 0px; /* Remove a margem padrão inferior do h1 */
+        }
+
+        header p { /* Estilo para a tagline */
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 5px; /* Ajusta a margem superior */
+            margin-bottom: 20px; /* Espaço abaixo da tagline */
+        }
+
+        nav ul {
+            display: flex;
+            /* justify-content: left; não é um valor válido. Use flex-start para alinhar à esquerda. */
+            /* Para manter a consistência com o título centralizado, 'center' seria o ideal. */
+            justify-content: flex-start; 
+            list-style-type: none; /* Remove os marcadores de lista */
+            padding: 0; /* Remove o preenchimento padrão */
+            margin: 0; /* Remove a margem padrão */
+            gap: 10px; /* Espaço entre os links */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none; /* Remove o sublinhado dos links */
+            font-weight: bold;
+            padding: 5px 10px; /* Adiciona um pouco de preenchimento para melhor área de clique */
+            transition: background-color 0.3s; /* Transição suave para o efeito hover */
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Fundo claro ao passar o mouse */
+            border-radius: 5px;
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */;
+        }
+            
+        main {
+            background-color: white;
+            max-width: 1250px; /* Limita a largura para melhor leitura em telas grandes */
+            min-width: 320px; /* Garante que o conteúdo não fique muito espremido */
+            margin: 0 auto 20px auto; /* Centraliza o conteúdo e adiciona margem inferior */
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra sutil */
+            border-radius: 0px 0px 10px 10px; /* Arredonda os cantos inferiores */
+        }
+        .historia {
+                  margin-bottom: 3px;
+                    }
+        main p{
+            margin: 15px 0px; /* Espaçamento padrão para parágrafos */
+            text-align: justify;
+        }
+        @font-face {
+            font-family: android;
+            src: url('fontes/idroid.otf') format('opentype'); 
+        }
+        h2 {
+            font-family: 'android';    
+            color: #2fa866;
+            margin-top: 1px;
+        }
+        img {
+            display: block;
+            margin: auto;
+        }
+        .imagem1 {
+            width: 1250px;
+            height: auto;
+            margin-left: 0px;
+        }
+        .video-background {
+            background-color: #2fa866;
+            padding: 5px;
+            margin: 0px -10px 20px -10px; /* Compensa o padding do main e adiciona margem inferior */
+        }
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56%; /* Proporção 16:9 para o vídeo */
+            height: 0;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        article section {
+            margin-bottom: 20px; /* Adiciona espaço abaixo de cada seção do artigo */
+        }
+        .aprender {
+            background-color: #c5ebd6; /* Cor de fundo do box */
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .aprendermais {
+            background-color: #2fa866;
+            background-color: #23814f; /* Tom de verde mais escuro para o cabeçalho */
+            color: white;
+            padding: 10px;
+            margin-bottom: 2px; /
+            border-radius: 10px 10px 0 0; /* Arredonda apenas os cantos superiores */
+            margin: -10px -10px 0 -10px;
+
+        }
+        .dividido ul {
+            column-count: 2; /* Divide a lista em duas colunas */
+            list-style-type: '\2714\00A0\00A0'; /* Adiciona um checkmark ✓ e espaço */
+        }
+
+        footer{
+            background-color: #23814f;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin: 0px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+        <header>
+            <h1 class="titulo">CURIOSIDADES DE TECNOLOGIA</h1>
+            <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Curiosidades</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- O conteúdo principal do artigo virá aqui -->
+             <h2 class="historia">HISTÓRIA DO MASCOSTE DO ANDROID</h2>
+             <p>&Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quam, sequi quibusdam ut voluptates repudiandae cupiditate non at exercitationem facilis omnis fugit alias aperiam tempore culpa fugiat id ipsam earum. &Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nam! Itaque, facere fugiat? Recusandae ut maxime autem maiores ea praesentium sit nobis ullam id. Sit quia omnis consectetur explicabo dolorum!</p>
+
+             <article>
+                    <section class="primeira">
+                    <section>
+                        <h2>PRIMEIRA VERSÃO
+
+                        </h2>
+                        <p>
+                            &Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus cumque molestias dignissimos, molestiae reiciendis, unde deserunt voluptatibus dolore, laboriosam odio nam eaque tenetur eveniet voluptate officiis vel esse soluta provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugit distinctio blanditiis perferendis corrupti minus iusto facere animi deserunt vero? Distinctio nisi earum exercitationem minus tempore, provident alias omnis sint?
+                        </p>
+                <img src="imagens/dan-droids.png" alt="android">
+                <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatum, optio neque laborum laboriosam ea sed aut maxime labore explicabo consectetur saepe nisi excepturi reiciendis suscipit nostrum illo ad vel.</p>
+                    </section>
+                    <section>
+                        <h2>Surge um novo Mascote</h2>
+                        <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur expedita corrupti assumenda, fugit a! Dolor soluta debitis in enim eaque sed incidunt provident cum illum, sapiente quisquam veniam doloribus!</p>
+                        <img class="imagem1" src="imagens/irina-blok.jpg" alt="imagem2">
+                        <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro a ratione alias consectetur vel ipsa, nam voluptas dolores dicta, dolor nulla adipisci corrupti sapiente eius, sunt quos aut! Accusamus, sed?  &Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, unde facere quis eum repellat minima, quod ab tempore vel cum quisquam voluptate optio vero repellendus, reiciendis totam deleniti beatae expedita.</p>
+
+                    </section>
+             </article>
+             <div class="video-background">
+                <div class="video-responsive">
+                    <iframe width="380" height="200" src="https://www.youtube.com/embed/l2UDgpLz20M?si=DIhHMeg30z5U-7xm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            
+            <section class="aprender">
+                <h2 class="aprendermais">Quer Aprender Mais?</h2>
+                <p>&Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eos delectus eaque inventore eius et ipsa dolorum eligendi blanditiis laudantium voluptatum ad, dolor fuga quod consequuntur voluptatem quaerat nisi aut?</p>
+                <div class="dividido">
+                    <ul>
+                       <li>1.5 - Cupcake</li>
+                        <li>1.6 - Donut</li>
+                         <li>2.0 - Eclair</li>
+                        <li>2.2 - Froyo</li>
+                        <li>2.3 - Gingerbread</li>
+                        <li>3.0 - Honeycomb</li>
+                        <li>4.0 - Ice Cream Sandwich</li>
+                        <li>4.1 - Jelly Bean</li>
+                        <li>4.4 - KitKat</li>
+                        <li>5.0 - Lollipop</li>
+                        <li>6.0 - Marshmallow</li>
+                        <li>7.0 - Nougat</li>
+                        <li>8.0 - Oreo</li>
+                            <li>9.0 - Pie</li>
+                    </ul>
+                </div>
+
+
+               
+                
+            </section >
+             <p class="ultimo">&Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae obcaecati itaque architecto cupiditate tempore excepturi nesciunt sequi mollitia, quibusdam necessitatibus quam commodi a nemo amet, ex eligendi quas quidem!</p>
+        </main>
+        <footer>
+<p>Desenvolvido por Hugo Leonnardo Chaves Farias</p>
+
+        </footer>
+    
+</body>
+</html>

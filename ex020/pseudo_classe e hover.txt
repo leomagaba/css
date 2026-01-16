@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de textos</title>
+
+    <style>
+    body {
+        font: normal 16px/1.5 Arial, Helvetica, sans-serif;
+        text-align: justify;
+        }
+        h1 {
+            text-align: center; 
+        }
+        h2 {
+            text-align: center; 
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <h1>Teste de Alinhamento de textos</h1>
+    <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit tempora, perspiciatis facere aliquam veritatis tenetur dolor? Eos assumenda asperiores alias. Labore hic vel iusto dolore cum voluptatibus cupiditate eum!</p>
+    <h2>testde alimento 2</h2>
+    <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas inventore sit eaque sint cum cupiditate quaerat voluptatibus eveniet magni officia obcaecati quam facilis, consequatur eius natus nemo eos vitae.</p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+width: 100%;           /* Faz o vídeo ocupar a largura do container */
+    max-width: 600px;      /* Define um tamanho máximo para não ficar gigante */
+    height: 350px;         /* Define a altura */
+    border: 2px solid #0b5327; /* Adiciona uma borda verde para combinar com seu site */
+    border-radius: 10px;   /* Arredonda os cantos do vídeo */
+    display: block;        /* Ajuda na centralização */
+    margin: 0 auto;        /* Centraliza o iframe se ele tiver largura fixa */
+}

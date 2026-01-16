@@ -1,0 +1,8 @@
+
+    font-size: 16px; /* Tamanho Base */
+    font-weight: normal; /* normal, bold, bolder, lighter, 100 a 900 */
+   font-style: normal; /* normal, italic, oblique */
+
+shorthand , simplificanção desse código de linha acima
+font-style, font-weight, font-size, font-family
+font: italic, bolder , 3em, 'arial', san-serif;

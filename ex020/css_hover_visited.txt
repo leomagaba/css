@@ -1,0 +1,27 @@
+Seletores personalizado
+
+id = #
+class = .
+pseudo-class = :
+pseudo-element = ::
+clidren = >
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    a {
+        color: red; /* cor do link */
+        text-decoration: none; /* remove o sublinhado do link */
+        font-weight: bold; /* deixa o link em negrito */
+      }
+
+a:visited {
+    color: rgb(0, 0, 0); /* cor do link visitado */
+   
+}
+a:hover {
+    color: black; /* cor do link quando o mouse estiver sobre ele */
+  text-decoration: underline; /* adiciona o sublinhado ao link quando o mouse estiver sobre ele */}
+a:active {
+    color: blue; /* cor do link quando estiver sendo clicado */

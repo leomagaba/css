@@ -1,0 +1,19 @@
+pegar fontes na pasta
+
+formatos tipos: opentype = otf
+		truetype = ttf
+
+ <style>
+        @font-face {
+            font-family: 'love';
+            src: url('fontes/idroid.otf') format('opentype'); 
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            font-family: 'love';
+            font-size: 16px;
+        }
+
+    </style>
