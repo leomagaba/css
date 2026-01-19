@@ -40,13 +40,14 @@ header {    background-color: black;
 
         section.imagem{
             background-color: rgba(57, 55, 55, 0.73);
-            color: black;
-
+            color: white; /* Corrigido de 'black' para 'white' para melhor legibilidade */
         }
 
         section.imagem > p{
             background-color: rgba(0, 0, 0, 0.251);
-            width: 400px;
+            max-width: 400px; /* Alterado de 'width' para 'max-width' para responsividade */
+            display: inline-block; /* Para o fundo se ajustar ao conteúdo */
+            padding: 10px; /* Adicionado para criar um espaçamento interno */
         }
         
         a{
@@ -54,7 +55,7 @@ header {    background-color: black;
             text-decoration: none;
             font-weight: bold;
         }
-        a:hover, footer > a:hover{
+        a:hover { /* Removido seletor redundante 'footer > a:hover' */
             text-decoration: underline;
             background-color: rgba(255, 255, 255, 0.359);
         }
