@@ -31,22 +31,27 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-size: 8vw; /* Agora ele responde à largura da tela 
+    10vh - Janela ficando mais alta/baixa. 10vw - Janela ficando mais larga/estreita. */
     $10vh $Janela ficando mais alta/baixaElementos que ocupam a tela inteira sem scroll.    $10vw $Janela ficando mais larga/estreitaTítulos responsivos que se ajustam ao PC/Celular.*/
      
 }
 
 header > p {
-    padding: 50px;
+    padding-bottom: 60px;
+    padding-top: 0px;
+    font-size: 50px;
  
 }
 
 /* 2. Definindo a fonte específica para as seções */
 section {
+    padding: 10vh 25px;
     padding: 10vh;
     padding-bottom: 10vh;
     padding-left: 25px;
     line-height: 2em;
     font-family: var(--font03); /* Alterado para Kaushan Script */
+    font-size: clamp(1.5em, 3.5vw, 2.5em); /* Tamanho responsivo com mínimo e máximo */
     font-size: 4vw; /* altera a largura da letra */
 }
 
