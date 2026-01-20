@@ -1,69 +1,85 @@
-@charset   'utf-8';
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Passion+One:wght@400;700&display=swap');
+
+:root {
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Passion One', cursive;
+    --font03: "Kaushan Script", cursive;
+}
 
 * {
     margin: 0px;
     padding: 0px;
 }
+
+/* 1. Definindo a fonte padrão para o site todo */
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--font01); /* Aplica Verdana e similares */
 }
-header {    background-color: black;
+
+header {
+    background-color: black;
     color: white;
     text-align: center;
+}
 
-        }
-        header > h1 {
-            padding-top: 50px;
-            font-variant: small-caps;
-            margin: 3px;
-            padding: 10px;
-            padding-bottom: 2px;
-        }
-        header > p{
-            padding: 5px;     
-            padding-bottom: 30px;
-        }
+header > h1 {
+    font-family: var(--font02); /* Mantém Passion One para o título */
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 8vw; /* Agora ele responde à largura da tela 
+    $10vh $Janela ficando mais alta/baixaElementos que ocupam a tela inteira sem scroll.    $10vw $Janela ficando mais larga/estreitaTítulos responsivos que se ajustam ao PC/Celular.*/
+     
+}
 
-        section{
-            padding: 10pt;
-            padding-bottom: 10px;
-            padding-left: 25px;
-            line-height: 2em;
-        }
+header > p {
+    padding: 50px;
+ 
+}
 
-        section.normal{
-            background-color: white;
-            color: black;
+/* 2. Definindo a fonte específica para as seções */
+section {
+    padding: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 25px;
+    line-height: 2em;
+    font-family: var(--font03); /* Alterado para Kaushan Script */
+    font-size: 5vw; /* altera a largura da letra */
+}
 
-        }
+section.normal {
+    background-color: white;
+    color: black;
+}
 
-        section.imagem{
-            background-color: rgba(57, 55, 55, 0.73);
-            color: white; /* Corrigido de 'black' para 'white' para melhor legibilidade */
-        }
+section.imagem {
+    background-color: rgba(57, 55, 55, 0.73);
+    color: white;
+}
 
-        section.imagem > p{
-            background-color: rgba(0, 0, 0, 0.251);
-            max-width: 400px; /* Alterado de 'width' para 'max-width' para responsividade */
-            display: inline-block; /* Para o fundo se ajustar ao conteúdo */
-            padding: 10px; /* Adicionado para criar um espaçamento interno */
-        }
-        
-        a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover { /* Removido seletor redundante 'footer > a:hover' */
-            text-decoration: underline;
-            background-color: rgba(255, 255, 255, 0.359);
-        }
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.251);
+    display: inline-block;
+    padding: 10px;
+}
 
-        footer{
-                background-color: black;
-                color: white;
-                text-align: center;
-                padding: 10px;
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        }
+a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.359);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
