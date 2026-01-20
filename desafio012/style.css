@@ -47,7 +47,7 @@ section {
     padding-left: 25px;
     line-height: 2em;
     font-family: var(--font03); /* Alterado para Kaushan Script */
-    font-size: 5vw; /* altera a largura da letra */
+    font-size: 4vw; /* altera a largura da letra */
 }
 
 section.normal {
@@ -58,18 +58,35 @@ section.normal {
 section.imagem {
     background-color: rgba(57, 55, 55, 0.73);
     color: white;
+     text-shadow: 2px  2px 0px black;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.251);
+    background-color: rgba(0, 0, 0, 0.562);
     display: inline-block;
     padding: 10px;
+   
+}
+section > p{
+    padding-bottom: 2em;
 }
 
 a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+section#img01 {
+            background-image: url('imagens/background001.jpg');
+            background-position: right center;
+            background-size: cover;
+}
+section#img02 {
+        background-image: url('imagens/background002.jpg');
+        background-size: cover;
 }
 
 a:hover {
