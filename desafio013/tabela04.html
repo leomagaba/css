@@ -5,37 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criação de tabelas</title>
     <style>
-      body{
+      body  {
           font-family: Arial, Helvetica, sans-serif;
-      }
-      caption{
+             }
+      caption   {
           font-size: 20px;
           font-weight: bold;
-          text-align: center
+          text-align: center;
           padding: 10px;
+                  }
 
-
-      }
-
-      table{
+      table {
           border-collapse: collapse;
-      }
+            }
       th,td  {
           border: 1px solid black;
-          padding: 10px
+          padding: 10px; /* Adicionado ponto e vírgula */
+          transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease; /* Transição suave para hover */
       }
       tr.num{
         background-color: rgba(128, 128, 128, 0.492);
       }
-      .num {
-    transition: all 0.3s ease; /* Faz a mudança de cor e sublinhado ser suave */
-    cursor: pointer; /* Adiciona a 'mãozinha', indicando que é interativo */
+      tr.num th:hover { /* Seletor corrigido para aplicar o hover aos THs da linha .num */
+        background-color: #c0c0c0; /* Cor de fundo mais clara no hover para harmonizar */
+        color: darkgreen; /* Cor do texto no hover */
+        text-decoration: underline; /* Sublinhado no hover */
+        text-decoration-thickness: 2px; /* Espessura do sublinhado */
+        text-underline-offset: 4px; /* Afastamento do sublinhado */
+        cursor: pointer; /* Cursor de ponteiro para indicar interatividade */
 }
-      .num :hover {
-        display: inline;
-        color: darkgreen;
-        text-decoration: underline;
-      }
+      
     </style>
   </head>
   <body>
@@ -68,7 +67,7 @@
         <tr>
           <td>Claudia Melo</td>
           <td>Oblivio</td>
-          <td>Matrix/td></td>
+          <td>Matrix</td> <!-- Corrigido erro de sintaxe -->
           <td>Cao de Guerra</td>
         </tr>
         <tr>
@@ -79,7 +78,7 @@
           <td>Gladiadores</td>
         </tr>
         <tr>
-          <td>HUgp leoonardo</td>       
+          <td>Hugo Leonardo</td> <!-- Corrigido erro de digitação -->
           <td>Origns</td>
           <td>Agente Duplo</td>
           <td>Vingadores Ultimato</td>
